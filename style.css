@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --dark-cyan: hsl(185, 75%, 39%);
+    --dark-blue: hsl(229, 23%, 23%);
+    --gray-blue: hsl(227, 10%, 46%);
+    --gray: hsl(0, 0%, 59%);
+    --ligth-gray: hsl(0, 5%, 87%);
+}
+
+body {
+    background-color: var(--dark-cyan);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+    position: relative;
+    overflow: visible;
+}
+
+.top-image {
+    position: absolute;
+    transform: translate(-55%, -35%);
+    z-index: -1;
+}
+
+.bottom-image {
+    position: fixed;
+    transform: translate(50%, 50%);
+    z-index: -1;
+}
+
+.card-top img {
+    position: relative;
+    border-radius: 50%;
+    top: 88px;
+    border: 5px white solid;
+}
+
+.profile-card{
+    height: 375px;
+    width: 350px;
+    border-radius: 15px;
+    overflow: hidden;
+    margin: 20px;
+    box-shadow: 3px 6px 15px #6d6d6d;
+}
+
+.card-top {
+    text-align: center;
+    height: 37.5%;
+    background-image: url("./images/bg-pattern-card.svg");
+}
+
+.card-info {
+    height: 37.5%;
+    background-color: white;
+    text-align: center;
+}
+
+.card-info .address {
+    margin-bottom: 10px;
+} 
+
+.card-info .address-container {
+    padding-top: 80px
+} 
+
+.card-info .street {
+    font-family: 'Kumbh Sans', sans-serif;
+    font-weight: 700;
+}
+
+.card-info .number {
+    font-family: 'Kumbh Sans', sans-serif;
+    font-weight: 400;
+    color: var(--gray-blue);
+}
+
+.card-info .city {
+    font-family: 'Kumbh Sans', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    color: var(--gray);
+}
+
+.card-stats {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-weight: 700;
+    height: 25%;
+    background-color: white;
+    border-top: 1px solid var(--ligth-gray);
+}
+
+.stat-item {
+    font-size: 10px;
+    text-align: center;
+    color: var(--gray);
+    letter-spacing: 1px;
+}
+
+.stat-count {
+    text-align: center;
+    margin-bottom: 5px;
+}
